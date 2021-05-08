@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+   <body>
+       <form action="" method="post">
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch1" name="gsearch1">
+        <input type="submit">
+        </form>
+      <br>
+      {% if id!='' %}
+      <!--{% print(id) %}-->
+      <iframe width="500" height="300"
+    src={{id}} name="main">
+    </iframe>
+    {% endif %}
+        <form action="" method="post">
+        <label for="gsearch2">Search Google:</label>
+        <input type="search" id="gsearch2" name="gsearch2">
+        <input type="submit">
+        </form> 
+    <br>
+    {% if result %}
+    <table border = 1>
+         {% for key,value in result.items() %}
+            <tr>
+               <th> youtube </th>
+               <td> <a href={{ value }} target = "main">{{key}} </a> </td>
+            </tr>
+         {% endfor %}
+      </table>
+    {% endif %}
+    <form method ="post" action="">
+    <button type="submit" name="submit_a" value="submit_a"> Submit_a </button>
+    </form> 
+    <br>
+    {% if transcripts1 %}
+    <form method ="post" action="">
+    {% for i in range(10) %}
+    <input type="radio" name="options" id="option1" value={{transcripts1[i]}}>{{transcripts1[i]}} </input><br>
+    {% endfor %}
+    <button type="submit" name="submit_b" value="submit_b"> Submit_b </button>
+    </form> 
+    {% endif %}
+   </body>
+</html>
+
+
+
+
