@@ -1,0 +1,11 @@
+numpy==1.18.5
+Flask==1.1.2
+tensorflow==2.3.0
+Keras==2.4.3
+gunicorn==20.0.4
+opencv-contrib-python-headless
+h5py
+pyyaml
+flask-ngrok
+youtube-transcript-api
+flask-mysql
