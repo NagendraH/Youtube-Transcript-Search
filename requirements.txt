@@ -1,6 +1,7 @@
 numpy==1.18.5
 Flask==1.1.2
 tensorflow
+gunicorn==20.0.4
 h5py
 pyyaml
 flask-ngrok
