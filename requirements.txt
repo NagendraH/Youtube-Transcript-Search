@@ -1,9 +1,6 @@
 numpy==1.18.5
 Flask==1.1.2
 tensorflow
-Keras
-gunicorn==20.0.4
-opencv-contrib-python-headless
 h5py
 pyyaml
 flask-ngrok
