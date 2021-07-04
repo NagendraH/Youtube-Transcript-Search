@@ -30,10 +30,10 @@ malstm=load_model('quora.h5')
 app = Flask(__name__)
 
 mysql = MySQL()
-app.config['MYSQL_DATABASE_USER'] = "u9fwcv0v3gajj3ky"
-app.config['MYSQL_DATABASE_PASSWORD'] = "qzgorFn5oXvosBhJs7t9"
-app.config['MYSQL_DATABASE_DB'] = "bff29zhocbsecefuqe3p"
-app.config['MYSQL_DATABASE_HOST'] = "bff29zhocbsecefuqe3p-mysql.services.clever-cloud.com"
+app.config['MYSQL_DATABASE_USER'] = ""
+app.config['MYSQL_DATABASE_PASSWORD'] = ""
+app.config['MYSQL_DATABASE_DB'] = ""
+app.config['MYSQL_DATABASE_HOST'] = ""
 mysql.init_app(app)
 yid1=''
 yid=''
